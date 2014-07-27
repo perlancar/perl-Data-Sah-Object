@@ -93,6 +93,8 @@ Shortcut for C<< $osch->clause('req'[, $value ]) >>.
 
 Delete clause named C<$name>. Return the old value.
 
-=back
+=head2 as_struct => array
+
+Return the schema raw data structure.
 
 =cut
