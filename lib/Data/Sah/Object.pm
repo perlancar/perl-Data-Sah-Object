@@ -34,7 +34,7 @@ sub sahn {
 
  # sahn() assumes you're passing an already-normalized schema and it will not
  # create a copy
- my $osch = sahn([array => {req=>1, of=>'str*'}, {}]);
+ $osch = sahn([array => {req=>1, of=>'str*'}, {}]);
 
  say $osch->type; # -> array
  say $osch->clause('req'); # -> 1
